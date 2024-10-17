@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+  "dockerComposeFile": [
+    "../compose.yml"
+  ],
+  "service": "dev",
+  "workspaceFolder": "/workspaces",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+        "C_Cpp.default.cppStandard": "c++20",
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  }
+}
